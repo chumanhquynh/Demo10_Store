@@ -1,7 +1,7 @@
 CREATE DATABASE QlyStore;
 use QlyStore;
 
-CREATE TABLE admin (
+create table admin (
                        id_admin int primary key  auto_increment,
                        username varchar(100) not null unique,
                        password varchar(100) not null
@@ -58,28 +58,21 @@ insert into sanpham (tensanpham, thuonghieu, gia, soluong, mota) values
                                                                      ('Samsung A54', 'Samsung', 8990000, 35, 'Tầm trung nổi bật');
 
 INSERT INTO khachhang (tenkhachhang, sodienthoai, diachi) VALUES
-                                                              ('Nguyễn Văn A', '0901123456', 'Hà Nội'),
-                                                              ('Trần Thị B', '0902234567', 'Hồ Chí Minh'),
-                                                              ('Lê Văn C', '0903345678', 'Đà Nẵng'),
-                                                              ('Phạm Thị D', '0904456789', 'Hải Phòng'),
-                                                              ('Hoàng Văn E', '0905567890', 'Cần Thơ'),
-                                                              ('Ngô Thị F', '0906678901', 'Huế'),
-                                                              ('Đỗ Văn G', '0907789012', 'Quảng Ninh'),
-                                                              ('Vũ Thị H', '0908890123', 'Bình Dương'),
-                                                              ('Bùi Văn I', '0909901234', 'Nha Trang'),
-                                                              ('Phan Thị K', '0910012345', 'Vũng Tàu');
-
-INSERT INTO khachhang (tenkhachhang, sodienthoai, diachi) VALUES
-                                                              ('Nguyễn Văn A', '0901123456', 'Hà Nội'),
-                                                              ('Trần Thị B', '0902234567', 'Hồ Chí Minh'),
-                                                              ('Lê Văn C', '0903345678', 'Đà Nẵng'),
-                                                              ('Phạm Thị D', '0904456789', 'Hải Phòng'),
-                                                              ('Hoàng Văn E', '0905567890', 'Cần Thơ'),
-                                                              ('Ngô Thị F', '0906678901', 'Huế'),
-                                                              ('Đỗ Văn G', '0907789012', 'Quảng Ninh'),
-                                                              ('Vũ Thị H', '0908890123', 'Bình Dương'),
-                                                              ('Bùi Văn I', '0909901234', 'Nha Trang'),
-                                                              ('Phan Thị K', '0910012345', 'Vũng Tàu');
+                                                              ('Nguyen Van A', '0901123456', 'Ha Noi'),
+                                                              ('Tran Thi B', '0902234567', 'Ho Chi Minh'),
+                                                              ('Le Van C', '0903345678', 'Da Nang'),
+                                                              ('Pham Thi D', '0904456789', 'Hai Phong'),
+                                                              ('Hoang Van E', '0905567890', 'Can Tho'),
+                                                              ('Ngo Thi F', '0906678901', 'Hue'),
+                                                              ('Do Van G', '0907789012', 'Quang Ninh'),
+                                                              ('Vu Thi H', '0908890123', 'Binh Duong'),
+                                                              ('Bui Van I', '0909901234', 'Nha Trang'),
+                                                              ('Phan Thi K', '0910012345', 'Vung Tau'),
+                                                              ('Nguyen Thi L', '0911123456', 'Bac Ninh'),
+                                                              ('Tran Van M', '0912234567', 'Thai Nguyen'),
+                                                              ('Le Thi N', '0913345678', 'Hai Duong'),
+                                                              ('Pham Van O', '0914456789', 'Hung Yen'),
+                                                              ('Hoang Thi P', '0915567890', 'Nam Dinh');
 
 INSERT INTO hoadon (idkhachhang, ngay, tongtien) VALUES
                                                      (1, '2025-01-01', 28990000),
@@ -110,3 +103,8 @@ select * from sanpham;
 select * from khachhang;
 select * from hoadon;
 select * from chitiethoadon;
+
+
+
+
+
