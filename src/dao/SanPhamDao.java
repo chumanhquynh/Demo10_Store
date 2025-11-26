@@ -78,6 +78,7 @@ public class SanPhamDao {
     }
 
     public static boolean delete(int id) {
+
         String sql = "delete from sanpham where idsanpham = ? ";
         try {
             Connection connection = DbConnection.getConnection();

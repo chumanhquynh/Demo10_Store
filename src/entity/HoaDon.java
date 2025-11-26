@@ -8,12 +8,27 @@ public class HoaDon {
     private int idKhachHang;
     private Date ngay;
     private BigDecimal tongTien;
+    private String tenKhachHang;
 
     public HoaDon() {
     }
 
     public HoaDon(int idHoaDon, int idKhachHang, Date ngay, BigDecimal tongTien) {
         this.idHoaDon = idHoaDon;
+        this.idKhachHang = idKhachHang;
+        this.ngay = ngay;
+        this.tongTien = tongTien;
+    }
+
+    public HoaDon(int idHoaDon, int idKhachHang, Date ngay, BigDecimal tongTien, String tenKhachHang) {
+        this.idHoaDon = idHoaDon;
+        this.idKhachHang = idKhachHang;
+        this.ngay = ngay;
+        this.tongTien = tongTien;
+        this.tenKhachHang = tenKhachHang;
+    }
+
+    public HoaDon(int idKhachHang, Date ngay, BigDecimal tongTien) {
         this.idKhachHang = idKhachHang;
         this.ngay = ngay;
         this.tongTien = tongTien;
@@ -49,5 +64,13 @@ public class HoaDon {
 
     public void setTongTien(BigDecimal tongTien) {
         this.tongTien = tongTien;
+    }
+
+    public String getTenKhachHang() {
+        return tenKhachHang;
+    }
+
+    public void setTenKhachHang(String tenKhachHang) {
+        this.tenKhachHang = tenKhachHang;
     }
 }
