@@ -33,24 +33,6 @@ public class HoaDonDao {
         return listHoaDon;
     }
 
-    public static boolean add(HoaDon hoaDon) {
-        String sql = "insert into hoadon (idhoadon, idkhachhang, ngay, tongtien) values (?, ?, ?, ?)";
-        try {
-            Connection connection = DbConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            preparedStatement.setInt(1, hoaDon.getIdHoaDon());
-            preparedStatement.setInt(2, hoaDon.getIdKhachHang());
-            preparedStatement.setDate(3, (Date) hoaDon.getNgay());
-            preparedStatement.setBigDecimal(4, hoaDon.getTongTien());
-            return preparedStatement.executeUpdate() > 0;
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-    }
-
     public boolean addHoaDon(HoaDon hoaDon) {
         String sql = "INSERT INTO hoadon (idkhachhang, ngay, tongtien) VALUES (?, ?, ?)";
 
