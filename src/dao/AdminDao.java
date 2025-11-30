@@ -2,8 +2,8 @@ package dao;
 
 import java.sql.*;
 
-import dbconnection.DbConnection;
-import entity.Admin;
+import config.DbConnection;
+import model.Admin;
 
 public class AdminDao {
     public Admin login(String username, String password) {

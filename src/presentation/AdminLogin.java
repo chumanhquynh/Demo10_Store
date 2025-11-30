@@ -1,7 +1,7 @@
-package ui;
+package presentation;
 
 import dao.AdminDao;
-import entity.Admin;
+import model.Admin;
 
 import java.util.Scanner;
 

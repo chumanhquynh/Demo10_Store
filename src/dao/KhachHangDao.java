@@ -1,8 +1,7 @@
 package dao;
 
-import dbconnection.DbConnection;
-import entity.KhachHang;
-import entity.SanPham;
+import config.DbConnection;
+import model.KhachHang;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
-package ui;
+package presentation;
 
 import dao.KhachHangDao;
-import entity.KhachHang;
+import model.KhachHang;
 
 import java.util.List;
 import java.util.Scanner;

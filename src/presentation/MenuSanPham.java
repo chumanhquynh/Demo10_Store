@@ -1,8 +1,8 @@
-package ui;
+package presentation;
 
 //import com.sun.tools.jdeprscan.scan.Scan;
 import dao.SanPhamDao;
-import entity.SanPham;
+import model.SanPham;
 //import jdk.swing.interop.SwingInterOpUtils;
 
 import java.math.BigDecimal;

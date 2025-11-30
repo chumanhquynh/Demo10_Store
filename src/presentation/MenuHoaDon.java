@@ -1,9 +1,9 @@
-package ui;
+package presentation;
 
 import dao.HoaDonDao;
 import dao.KhachHangDao;
-import entity.HoaDon;
-import entity.KhachHang;
+import model.HoaDon;
+import model.KhachHang;
 
 import java.math.BigDecimal;
 import java.sql.Date;

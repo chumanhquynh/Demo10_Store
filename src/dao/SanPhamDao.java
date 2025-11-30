@@ -1,7 +1,7 @@
 package dao;
 
-import dbconnection.DbConnection;
-import entity.SanPham;
+import config.DbConnection;
+import model.SanPham;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -15,7 +15,7 @@ public class SanPhamDao {
         String sql = "select * from sanpham";
 
         try {
-            Connection connection = dbconnection.DbConnection.getConnection();
+            Connection connection = config.DbConnection.getConnection();
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
 

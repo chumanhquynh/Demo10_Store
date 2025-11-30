@@ -1,6 +1,6 @@
 package main;
 
-import ui.StartMenu;
+import presentation.StartMenu;
 
 public class Main {
 

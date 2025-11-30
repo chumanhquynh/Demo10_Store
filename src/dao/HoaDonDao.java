@@ -1,7 +1,7 @@
 package dao;
 
-import dbconnection.DbConnection;
-import entity.HoaDon;
+import config.DbConnection;
+import model.HoaDon;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,24 +31,6 @@ public class HoaDonDao {
             e.printStackTrace();
         }
         return listHoaDon;
-    }
-
-    public static boolean add(HoaDon hoaDon) {
-        String sql = "insert into hoadon (idhoadon, idkhachhang, ngay, tongtien) values (?, ?, ?, ?)";
-        try {
-            Connection connection = DbConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            preparedStatement.setInt(1, hoaDon.getIdHoaDon());
-            preparedStatement.setInt(2, hoaDon.getIdKhachHang());
-            preparedStatement.setDate(3, (Date) hoaDon.getNgay());
-            preparedStatement.setBigDecimal(4, hoaDon.getTongTien());
-            return preparedStatement.executeUpdate() > 0;
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
     }
 
     public boolean addHoaDon(HoaDon hoaDon) {
